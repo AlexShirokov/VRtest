@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.testcase.vr.MainActivityFragment"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encrypt file"
+        android:id="@+id/button_encrypt"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/space" />
+
+    <Space
+        android:layout_width="80px"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/space" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Decrypt &amp; Play"
+        android:id="@+id/button_decrypt_and_play"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/space" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play last decoded"
+        android:id="@+id/button_play_last"
+        android:layout_below="@+id/space"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
